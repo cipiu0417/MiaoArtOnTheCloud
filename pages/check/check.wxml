@@ -1,0 +1,61 @@
+<!--pages/check/check.wxml-->
+<!-- 如果是购物记录 -->
+<view class="cart" wx:if="{{topic == 'cart'}}">
+    <view wx:if="{{cartList.length == 0}}">
+        <text style="position: fixed; right: 23vw; top: 28vh; font-size: large; color: #fff;">小主~您暂未有预定记录</text>
+        <!-- <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/暂无相关信息.png" mode="aspectFill" style="width: 100vw; height: 100vh; z-index: -1;" /> -->
+    </view>
+    <view class="cart_box" wx:for="{{cartList}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面D/商品 ({{item.goods_id + 1}}).jpg" mode="aspectFill" />
+        <view class="text">
+            <text>商品名称：{{item.name}}</text>
+            <text>单价：￥{{item.price}}.00</text>
+            <text>下单时间：{{item.time}}</text>
+        </view>
+    </view>
+</view>
+
+<!-- 如果是收藏夹 -->
+<view class="like" wx:if="{{topic == 'like'}}">
+    <view wx:if="{{likeList.length == 0}}">
+        <text style="position: fixed; right: 23vw; top: 28vh; font-size: large; color: #fff;">小主~您暂未有收藏记录</text>
+        <!-- <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/暂无收藏.png" mode="aspectFill" style="width: 100vw; height: 100vh; z-index: -1;" /> -->
+    </view>
+    <view class="like_box" wx:for="{{likeList}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面D/商品 ({{item.goods_id + 1}}).jpg" mode="aspectFill" />
+        <view class="text">
+            <text>商品名称：{{item.name}}</text>
+            <text>单价：￥{{item.price}}.00</text>
+        </view>
+    </view>
+</view>
+
+<!-- 个人信息设置 -->
+<view class="setting" wx:if="{{topic == 'setting'}}">
+    <view class="setprofile">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+            <image class="avatar" src="{{avatarUrl}}"></image>
+        </button>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;点击修改头像</text>
+    </view>
+
+    <view class="setname">
+        <view class="text">昵称:</view>
+        <input type="nickname" class="weui-input" placeholder="请输入昵称" bindinput="getNewName" />
+    </view>
+    <view class="settingButton" bindtap="sure">确认</view>
+</view>
+
+<!-- 合作者声明 -->
+<view class="announce" wx:if="{{topic == 'announce'}}">
+    <view class="bg">
+        <text class="title">合作者声明</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;为推广贵州纳雍箐苗少数民族非遗文化，四川大学云上苗艺项目组与<text style="font-weight: bolder;">纳雍墨云花苗艺、纳雍文旅局、学者祝绯女士</text>紧密合作。就合作服务情况作如下说明。</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;一、四川大学云上苗艺项目组深入调研纳雍箐苗族情况，并从文化保护、文化宣传与经济开发三个维度构建针对纳雍箐苗非遗文化的发展传播体系。该小程序及视频内容为项目团队的具体产出成果，推动箐苗文化的网络传播。</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;二、墨云花苗艺工坊主、非遗传承人李金为项目提供商业界面的具体产品信息，项目组为李金的民族非遗产品提供销售平台，一方面帮助箐苗文化更好地融入市场及生活，另一方面起到推广箐苗非遗文化的作用。</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;三、学者祝绯女士为项目小程序文案部分提供学术支持。</text>
+        <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;特此说明。</text>
+        <text class="end">四川大学云上苗艺项目组</text>
+        <text class="end" decode="{{true}}" space="{{true}}">&emsp;&emsp;&emsp;2023年3月</text>
+    </view>
+</view>

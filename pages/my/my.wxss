@@ -1,0 +1,118 @@
+/* pages/my/my.wxss */
+page {
+    background-color: #284483;
+}
+
+.up {
+    position: relative;
+    width: 100%;
+    height: 420rpx;
+    /* background-color: chocolate; */
+    z-index: 1;
+}
+
+.up .bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 50% 50%;
+    background-color: #fff;
+    box-shadow: 15rpx 15rpx 50rpx #50505a;
+}
+
+.info {
+    position: absolute;
+    top: 60rpx;
+    left: 35vw;
+    width: 30vw;
+    height: 43vw;
+    /* background-color: darkcyan; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info .profile {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    background-color: #fff;
+    border: 8px solid #284483;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.profile image{
+    width: 100%;
+    height: 100%;
+}
+
+.up .nickname {
+    width: 30vw;
+    height: 13vw;
+    font-size: 20px;
+    line-height: 13vw;
+    overflow: auto;
+}
+
+.down {
+    position: relative;
+    top: -70rpx;
+    left: 5vw;
+    width: 90vw;
+    height: 300rpx;
+    background-color: #fff;
+    border-radius: 20rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.down .shop,
+.down .like {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+.shop image,
+.like image {
+    width: 100%;
+    height: 30%;
+}
+
+.shop text,
+.like text {
+    margin: 20rpx 0 40rpx 0;
+}
+
+.panel {
+    width: 90vw;
+    height: 40vh;
+    /* background-color: #fff; */
+    position: relative;
+    border-radius: 20rpx;
+    left: 9.5vw;
+    top: -5vh;
+}
+
+.panel .panel-list-item {
+    height: 10vh;
+    line-height: 15vh;
+    width: 90%;
+    /* background-color: pink; */
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    padding: 0 30rpx;
+    color: #fff;
+}
+
+.panel-list-item::after {
+    content: '\27A4';
+    color: #fff;
+    font-size: 16px;
+    position: absolute;
+    right: 11vw;
+}

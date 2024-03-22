@@ -1,0 +1,61 @@
+<!--pages/videotape/videotape.wxml-->
+<!-- <text>pages/videotape/videotape.wxml</text> -->
+<view class="bg_up"></view>
+<!-- <view class="select">
+    <view class="selectButton" wx:for="{{selectList}}">{{item}}</view>
+    <view class="more">
+        <view class="rectangle"></view>
+        <text>展开</text>
+    </view>
+</view> -->
+<view class="videos">
+    <video 
+      id="video1" 
+      src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/箐源遗史纪录片完整版.mp4" 
+      binderror="videoErrorCallback"  
+      show-center-play-btn='{{true}}' 
+      show-mute-btn = "{{true}}"
+      direction="90"
+      controls
+      enable-play-gesture = "{{true}}"
+      vslide-gesture = "{{true}}"
+      poster="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/poster1.jpg"
+    ></video>
+    <video 
+      id="video1" 
+      src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/刺绣蜡染简介.mp4" 
+      binderror="videoErrorCallback"  
+      show-center-play-btn='{{true}}' 
+      show-mute-btn = "{{true}}"
+      direction="90"
+      controls
+      enable-play-gesture = "{{true}}"
+      vslide-gesture = "{{true}}"
+      poster="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/poster2.jpg"
+    ></video>
+    <video 
+      id="video1" 
+      src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/主页面B蜡染简介.mp4" 
+      binderror="videoErrorCallback"  
+      show-center-play-btn='{{true}}' 
+      show-mute-btn = "{{true}}"
+      direction="90"
+      controls
+      enable-play-gesture = "{{true}}"
+      vslide-gesture = "{{true}}"
+      poster="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/poster3.jpg"
+    ></video>
+    <video 
+      id="video1" 
+      src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/主页面B 头饰简介.mp4" 
+      binderror="videoErrorCallback"  
+      show-center-play-btn='{{true}}' 
+      show-mute-btn = "{{true}}"
+      direction="90"
+      controls
+      enable-play-gesture = "{{true}}"
+      vslide-gesture = "{{true}}"
+      poster="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面B/poster4.jpg"
+    ></video>
+</view>
+<view class="bg_down"></view>

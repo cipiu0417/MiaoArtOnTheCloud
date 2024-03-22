@@ -1,0 +1,178 @@
+/* pages/check/check.wxss */
+page {
+    background-color: #284483;
+}
+
+.cart_box {
+    width: 700rpx;
+    position: relative;
+    left: 25rpx;
+    background-color: #fff;
+    height: max-content;
+    margin: 30rpx 0;
+    border-radius: 15rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.cart_box image {
+    width: 170rpx;
+    height: 170rpx;
+    margin: 20rpx 10rpx 20rpx 0;
+    border-radius: 15rpx;
+}
+
+.cart_box .text {
+    height: max-content;
+    margin: 20rpx 5rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 480rpx;
+}
+
+.like {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.like_box {
+    width: 45vw;
+    position: relative;
+    left: 3vw;
+    background-color: #fff;
+    height: max-content;
+    margin: 1.5vh 0;
+    border-radius: 15rpx;
+    margin-right: 4vw;
+}
+
+.like_box image {
+    width: 40vw;
+    height: 40vw;
+    border-radius: 15rpx;
+    margin: 10rpx 2.5vw;
+}
+
+.like_box .text {
+    width: 92%;
+    position: relative;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10rpx;
+}
+
+.announce .bg {
+    width: 90vw;
+    height: 80vh;
+    background-color: #fff;
+    border-radius: 20rpx;
+    position: relative;
+    left: 5vw;
+    top: 5vw;
+    display: flex;
+    flex-direction: column;
+    padding: 35rpx;
+    box-sizing: border-box;
+    font-family: "楷体";
+    box-shadow: -5rpx -5rpx 30rpx 10rpx #706f6f inset;
+}
+
+.bg text {
+    line-height: 20px;
+    margin-bottom: 30rpx;
+}
+
+.bg .title {
+    font-size: large;
+    margin-bottom: 20rpx;
+    margin-top: 10rpx;
+    padding-left: 230rpx;
+}
+
+.bg .end {
+    margin-top: 20rpx;
+    padding-left: 240rpx;
+    position: relative;
+    left: 25rpx;
+    margin-bottom: 0;
+}
+
+.setting .avatar-wrapper {
+    background-color: #284483;
+    width: 100%;
+    margin: 40rpx 0 10rpx 0;
+    color: #fff;
+}
+
+.setting button image {
+    width: 240rpx;
+    height: 240rpx;
+    border-radius: 20rpx;
+}
+
+.setprofile text {
+    color: #fff;
+}
+
+.setprofile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.setting text::before {
+    content: "\2191";
+    font-size: 20px;
+}
+
+.setname {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10rpx;
+    width: 90vw;
+    box-shadow:10rpx 10rpx 30rpx rgb(133, 132, 132) inset;
+    position: relative;
+    left: 5vw;
+    top: 100rpx;
+}
+
+.setname input {
+    /* background-color: burlywood; */
+    height: 100rpx;
+    width: 80%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    /* color: #fff; */
+}
+
+.setname .text {
+    line-height: 100rpx;
+    width: 20%;
+    /* background-color: chartreuse; */
+    font-size: large;
+    font-weight: bold;
+    padding: 0 40rpx;
+}
+
+.settingButton {
+    width: 40vw;
+    background-color: #fff;
+    height: 110rpx;
+    line-height: 110rpx;
+    font-size: 20px;
+    font-weight: bold;
+    /* display: flex;
+    justify-content: center; */
+    padding-left: 12vw;
+    box-sizing: border-box;
+    border-radius: 15rpx;
+    position: absolute;
+    left: 30vw;
+    box-shadow:10rpx 10rpx 30rpx rgb(133, 132, 132) inset;
+    top: 50vh;
+    letter-spacing: 1.5ch;
+}

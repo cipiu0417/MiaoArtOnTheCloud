@@ -1,0 +1,19 @@
+<!--pages/information/information.wxml-->
+<view class="search">
+    <text>您好！欢迎来到文献库\n您可以搜索您想要的资料！</text>
+    <view class="search_box">
+        <input class="box" bindinput="getKeyWord" placeholder="Search"></input>
+        <image src="/images/search_button.png" mode="aspectFit" bindtap="goSearch"></image>
+    </view>
+</view>
+
+<text class="remen_text">热门资料</text>
+<view class="remen" wx:for="{{header}}" wx:key="index" data-index="{{index}}" bindtap="getCard">
+    <view class="card">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片1.jpg"></image>
+        <view class="pics">
+            <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片{{index + 2}}.jpg" mode="aspectFill"></image>
+        </view>
+        <text class="header">{{item}}</text>
+    </view>
+</view>

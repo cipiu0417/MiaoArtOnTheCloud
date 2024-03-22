@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/information/information",
+    "pages/interact/interact",
+    "pages/shop/shop",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/check/check"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#284483",
+    "navigationBarTitleText": "云上苗艺",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#284483"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "tabBar": {
+    "selectedColor": "#284483",
+    "list": [{
+        "pagePath": "pages/information/information",
+        "text": "文献库",
+        "iconPath": "images/information.png",
+        "selectedIconPath": "images/information-selected.png"
+      },
+      {
+        "pagePath": "pages/interact/interact",
+        "text": "交互厅",
+        "iconPath": "images/interact.png",
+        "selectedIconPath": "images/interact-selected.png"
+      },     
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "电商台",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shop-selected.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my-selected.png"
+      }
+    ]
+  }
+}

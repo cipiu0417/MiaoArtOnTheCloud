@@ -1,0 +1,36 @@
+/* pages/detail/detail.wxss */
+page{
+    /* background-image: url('https://img.tukuppt.com/ad_preview/00/20/97/5c9a2203b9d42.jpg!/fw/980'); */
+    background-image: url('https://img.ixintu.com/download/jpg/201911/3a510535c643ccdf8546add96d32e5b5.jpg!con');
+    /* background-image: url('https://img.zcool.cn/community/01a3095cfdbe1fa801213ec253585f.png@2o.png'); */
+    background-size: 100% 100%;
+}
+
+.book {
+    margin: 20rpx 30rpx 0 30rpx;
+    width: 90vm;
+    height: 95vh;
+    border: 3px solid #284483;
+    box-sizing: border-box;
+    border-radius: 25rpx;
+    padding: 10rpx 15rpx;
+    line-height: 60rpx;
+    backdrop-filter: blur(10px);
+    overflow: scroll;
+}
+
+.addpics {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.addpics image {
+    width: 90%;
+    height: 400rpx;
+    border-radius: 20rpx;
+    margin: 20rpx 0;
+    /* border: 5px solid #4d5297; */
+    box-shadow: 10rpx 10rpx 30rpx #706f6f,-10rpx -10rpx 30rpx #ffffff;
+}

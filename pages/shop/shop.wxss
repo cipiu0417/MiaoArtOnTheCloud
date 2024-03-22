@@ -1,0 +1,79 @@
+/* pages/shop/shop.wxss */
+page {
+    background-color: #284483;
+}
+
+.search_box {
+    width: 90vw;
+    height: 70rpx;
+    display: flex;
+    margin: 20rpx 5vw;
+}
+
+.box {
+    width: 90%;
+    height: 70rpx;
+    border-radius: 15rpx;
+    background-color: white;
+    line-height: 70rpx;
+    padding-left: 10rpx;
+    color: black;
+}
+
+.search_box image {
+    margin-left: 20rpx;
+    width: 10%;
+    height: 70rpx;
+}
+
+.shop_box {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.shop_item {
+    width: 45vw;
+    height: min-content;
+    background-color: #fff;
+    margin: 40rpx 15rpx 25rpx 15rpx;
+    border-radius: 20rpx;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    left: 1.5vw;
+    box-sizing: border-box;
+}
+
+.shop_item image {
+    width: 42vw;
+    height: 42vw;
+    margin: 12rpx;
+    border-radius: 20rpx;
+}
+
+.click {
+    display: flex;
+    text-align: center;
+    position: relative;
+    left: 180rpx;
+}
+
+.click text{
+    line-height: 33px;
+    position: absolute;
+    left: -160rpx;
+    color: red;
+}
+
+.buy {
+    background-color: #061a2e;
+    color: #fff;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px;
+    margin-top: 5px;
+    box-shadow: -4rpx 6rpx 7rpx 1rpx #919191;
+}

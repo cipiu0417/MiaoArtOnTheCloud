@@ -1,0 +1,100 @@
+/* pages/videotape/videotape.wxss */
+page{
+    background-color: rgb(16, 10, 105);
+}
+
+.bg_up {
+    width: 100%;
+    height: 600rpx;
+    border-radius: 0 0 40% 40%;
+    background-color: #284483;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg_down {
+    width: 100%;
+    height: 600rpx;
+    border-radius: 40% 40% 0 0;
+    background-color: #284483;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.videos {
+    position: absolute;
+    top: 30rpx;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#video1 {
+    width: 650rpx;
+    height: 400rpx;
+    border-radius: 20rpx;
+    margin: 30rpx 0;
+    border: 3px solid #fff;
+    /* box-sizing: border-box; */
+    /* box-shadow: 10rpx 10rpx 30rpx #706f6f, -10rpx -10rpx 30rpx #fff; */
+}
+
+/* 
+.select {
+    position: absolute;
+    top: 30rpx;
+    left: 35rpx;
+    width: 500rpx;
+    height: 250rpx;
+    background-color: #284483;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.selectButton {
+    width: max-content;
+    height: 40rpx;
+    padding: 10rpx 20rpx;
+    margin-top: 40rpx;
+    margin-left: 20rpx;
+    margin: 40rpx 20rpx;
+    line-height: 40rpx;
+    background-color: #fff;
+    border-radius: 10rpx;
+}
+
+.more {
+    color: #fff;
+    font-size: small;
+    position: absolute;
+    bottom: 30rpx;
+    right: 10rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle {
+	width: 0;
+	height: 0;
+	border-top: 20rpx solid #fff;
+	border-right: 20rpx solid transparent;
+	border-bottom: 20rpx solid transparent;
+    border-left: 20rpx solid transparent;
+    position: relative;
+    top: 12rpx;
+    right: 8rpx;
+}
+
+.more text {
+    height: max-content;
+    line-height: max-content;
+} 
+*/

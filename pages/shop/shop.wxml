@@ -1,0 +1,39 @@
+<!--pages/shop/shop.wxml-->
+<view class="search_box">
+    <input class="box" bindinput="getKeyWord" placeholder="Search"></input>
+    <image src="/images/search_button.png" mode="aspectFit" bindtap="goSearch"></image>
+</view>
+
+<view class="shop_box">
+    <!-- 搜索前 -->
+    <view class="shop_item" wx:for="{{goodsList}}" wx:key="index" wx:if="{{goodsList.length == 18}}">
+        <image src="{{item.pics}}" mode="aspectFill" />
+        <text>{{item.name}}</text>
+        <view class="click">
+            <text>￥{{item.price}}.00</text>
+            <!-- <view class="cart" bindtap="addToCart" data-index="{{index}}">
+                <image src="{{cartClicked[index]?'/images/购物车-click.png':'/images/购物车.png'}}" style="height: 22px; width: 22px;"></image>
+            </view> -->
+            <view class="like" bindtap="addToLike" data-index="{{index}}">
+                <image src="{{likeClicked[index]?'cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/收藏-click.png':'cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/收藏.png'}}" style="height: 22px; width: 22px;"></image>
+            </view>
+            <view class="buy" bindtap="buyRightNow" data-index="{{index}}">预定</view>
+        </view>
+    </view>
+
+    <!-- 搜索后 -->
+    <view class="shop_item" wx:for="{{goodsList}}" wx:key="index" wx:if="{{goodsList.length != 18}}">
+        <image src="{{item.pics}}" mode="aspectFill" />
+        <text>{{item.name}}</text>
+        <view class="click">
+            <text>￥{{item.price}}.00</text>
+            <view class="like" bindtap="SaddToLike" data-index="{{index}}">
+                <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/收藏.png" style="height: 22px; width: 22px;"></image>
+            </view>
+            <view class="buy" bindtap="SbuyRightNow" data-index="{{index}}">预定</view>
+        </view>
+    </view>
+    <!-- <view class="shop_item"></view>
+    <view class="shop_item"></view>
+    <view class="shop_item"></view> -->
+</view>

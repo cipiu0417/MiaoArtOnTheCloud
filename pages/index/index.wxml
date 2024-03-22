@@ -1,0 +1,20 @@
+<!--pages/index/index.wxml-->
+<!-- <image class="bg-image" mode="aspectFill" src="https://picx.zhimg.com/v2-3afad658b44f596b10ec13b2b6d4299d_r.jpg?source=1940ef5c"></image> -->
+<!-- <image class="bg-image" mode="aspectFill" src="https://picx.zhimg.com/v2-36d4626179b21ede507f08593329aa22_r.jpg?source=1940ef5c"></image> -->
+<!-- <image class="bg-image" mode="aspectFill" src="https://pica.zhimg.com/v2-b442793f521ca651ca2afe7a312a29ef_r.jpg?source=1940ef5c"></image> -->
+<!-- <image class="bg-image" mode="aspectFill" src="https://img.ixintu.com/download/jpg/201911/3a510535c643ccdf8546add96d32e5b5.jpg!con"></image> -->
+<!-- <image class="bg-image" mode="aspectFill" src="https://pic1.zhimg.com/v2-3b83e03ec8352b504e7a3dab903a9c66_r.jpg?source=1940ef5c"></image> -->
+<image class="bg-image" mode="aspectFill" src="https://img.tukuppt.com/ad_preview/00/19/07/5c99f6c8a93ab.jpg!/fw/980"></image>
+
+<view class="logImg">
+  <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/logo.png" mode="aspectFit" style="opacity: 1;"></image>
+</view>
+<view class="name1">
+  体验
+</view>
+<view class="name2">
+  云上苗艺
+</view>
+<view class="logInButton" bindtap="login">
+  开始体验
+</view>

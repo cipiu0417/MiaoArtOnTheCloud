@@ -1,0 +1,22 @@
+<!--pages/detail/detail.wxml-->
+<view class="book" wx:if="{{search == null || search == 0}}">
+    <view class="addpics" wx:if="{{choice == 4}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片6.jpg"></image>
+    </view>
+    <view class="addpics" wx:if="{{choice == 1}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片2.jpg"></image>
+    </view>
+    <view class="addpics" wx:if="{{choice == 2}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片3.jpg"></image>
+    </view>
+    <view class="addpics" wx:if="{{choice == 3}}">
+        <image src="cloud://cloud1-4gaipt62bd15a377.636c-cloud1-4gaipt62bd15a377-1309955440/主页面A/压缩图片4.jpg"></image>
+    </view>
+    <text decode="{{true}}" space="{{true}}" wx:for="{{text.length}}" wx:key="index">&emsp;&emsp;{{text[index]}}
+    </text>
+</view>
+
+<view class="searchRes book" wx:if="{{search == 1}}">
+    <text decode="{{true}}" space="{{true}}" wx:for="{{text.length}}" wx:key="index">&emsp;&emsp;{{text[index]}}
+    </text>
+</view>

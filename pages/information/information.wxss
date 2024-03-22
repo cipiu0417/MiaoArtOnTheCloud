@@ -1,0 +1,106 @@
+/* pages/information/information.wxss */
+page {
+    background-color: #284483;
+    color: white;
+    padding: 10rpx 40rpx 0 40rpx;
+}
+
+.search {
+    position: relative;
+    left: 8rpx;
+}
+
+.search_box {
+    width: 90vw;
+    height: 70rpx;
+    display: flex;
+    margin: 20rpx 0;
+}
+
+.box {
+    width: 90%;
+    height: 70rpx;
+    border-radius: 15rpx;
+    background-color: white;
+    line-height: 70rpx;
+    padding-left: 10rpx;
+    color: black;
+}
+
+.search_box image {
+    margin-left: 20rpx;
+    width: 10%;
+    height: 70rpx;
+}
+
+.remen_text {
+    margin-top: 50rpx;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+}
+
+.remen {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.remen .card {
+    width: 100%;
+    height: 300rpx;
+    background-color: #fff;
+    margin: 40rpx 0;
+    border-radius: 15rpx;
+    color: black;
+    line-height: 300rpx;
+    position: relative;
+    overflow: hidden;
+    z-index: -999;
+}
+
+.card image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 600rpx;
+    width: 100vw;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.pics image {
+    width: 300rpx;
+    height: 250rpx;
+    opacity: 1;
+    position: absolute;
+    left: 25rpx;
+    top: 25rpx;
+    z-index: 1;
+    border-radius: 15rpx;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    box-shadow: 10rpx 10rpx 30rpx #706f6f;
+}
+
+.card .header {
+    position: absolute;
+    right: 5rpx;
+    top: 25rpx;
+    width: 350rpx;
+    height: 250rpx;
+    line-height: 250rpx;
+    z-index: 0;
+    border-radius: 15rpx;
+    font-size: 45rpx;
+    font-family: '阿里妈妈东方大楷 Regular';
+}
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/mWQ8t4beu9yk.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/f0JgbLWL5Y8I.woff") format("woff");
+    font-display: swap;
+  }

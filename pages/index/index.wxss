@@ -1,0 +1,110 @@
+/* pages/index/index.wxss */
+page {
+    background-color: #ededed;
+    font-family: 阿里妈妈东方大楷 Regular;
+}
+
+.bg-image {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.logImg {
+    position: absolute;
+    width: 300rpx;
+    height: 300rpx;
+    border-radius: 50%;
+    padding: -20rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22vh auto;
+    box-shadow: 10rpx 10rpx 20rpx #a6a6a6,
+        -10rpx -10rpx 20rpx #ffffff;
+    /* overflow: hidden; */
+    left: 50%;
+    animation: up_down 3s ease-in-out infinite;
+    /* transform: translateX(-50%); */
+}
+
+.logInButton {
+    position: absolute;
+    height: 8vh;
+    width: 45vw;
+    bottom: 32vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30rpx;
+    text-align: center;
+    line-height: 9vh;
+    font-weight: bolder;
+    font-size: 45rpx;
+    letter-spacing: 0.5ch;
+    color: #ffffff;
+    box-shadow: 10rpx 10rpx 20rpx #a6a6a6,
+        -10rpx -10rpx 30rpx #ffffff;
+}
+
+.name1 {
+    position: absolute;
+    top: 15vh;
+    transform: translateX(-50%);
+    left: 25%;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 阿里妈妈东方大楷 Regular;
+    font-size: 85rpx;
+}
+
+.name2 {
+    position: absolute;
+    top: 48vh;
+    transform: translateX(-50%);
+    left: 75%;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 阿里妈妈东方大楷 Regular;
+    font-size: 80rpx;
+    width: 50vw;
+}
+
+.username {
+    position: absolute;
+    top: 55vh;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50rpx;
+    font-weight: bolder;
+}
+
+@keyframes up_down {
+    0% {
+        transform: translate(-50%, 0rpx);
+    }
+
+    50% {
+        transform: translate(-50%, 50rpx);
+    }
+
+    100% {
+        transform: translate(-50%, 0rpx);
+    }
+}
+
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/etFBxKJTHJt0.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/UDxeNuuzcDl5.woff") format("woff");
+    font-display: swap;
+  }
+
+  /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+    font-family: "阿里妈妈东方大楷 Regular";font-weight: 400;src: url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/yboBusDnV8Uv.woff2") format("woff2"),
+    url("//at.alicdn.com/wf/webfont/725VsaWV7VmU/BYWBJu6ybv5b.woff") format("woff");
+    font-display: swap;
+  }
